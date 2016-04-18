@@ -1,0 +1,85 @@
+@import "_variables.less";
+
+
+header {
+  padding: 10px;
+
+  h1 {
+    font-size: 2.3em;
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+  }
+}
+
+.short-product-detail {
+  border-bottom: 1px solid @lightGray;
+  padding: 20px;
+  background-color: #f4f4f4;
+  .info-container {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+    .price {
+      font-size: 2.8em;
+      padding-bottom: 30px;
+      sup{
+        font-size: .5em;
+      }
+    }
+    input {
+      width: 50px;
+    }
+    .related-products{
+      max-width: 450px;
+      margin-top: 25px;
+    }
+  }
+  .img-container {
+    display: inline-block;
+    margin: 10px;
+    img {
+      max-height: 500px;
+      max-width: 500px;
+    }
+  }
+}
+
+.new-question {
+  background: #dcf1fa;
+  padding: 10px 8px;
+  input {
+    width: 90%;
+  }
+  i {
+    font-size: 16px;
+    color: #77AAEF;
+  }
+}
+
+.list-questions {
+  li {
+    border-bottom: 1px dotted #ccc;
+    padding: 15px 8px;
+
+    &:nth-last-child(1) {
+      border-bottom: none
+    }
+    .question {
+      i {
+        color: #77AAEF;
+        font-size: 12px;
+      }
+    }
+    .answer {
+      margin-left: 25px;
+      i {
+        color: #99D2F0;
+        font-size: 12px;
+      }
+    }
+  }
+}
+

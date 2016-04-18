@@ -1,0 +1,89 @@
+@import "_variables.less";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: @header;
+  border-bottom: 1px solid @lightGray;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 60px;
+  .header-inner {
+    margin: 5px auto;
+    max-width: 1200px;
+  }
+  .nav-search {
+    display: inline-block;
+    margin-left: 100px;
+    width: 76%;
+    position: relative;
+    input {
+      width: 70%;
+      border-radius: 3px 0 0 3px;
+      padding: 10px;
+      height: 37px;
+    }
+    .search-btn {
+      border-radius: 0 3px 3px 0;
+      border: 1px solid #CDCCCB;
+      color: #666;
+      cursor: pointer;
+      height: 37px;
+      top: 5px;
+      background: #f1f1f1 none;
+      position: absolute;
+      box-shadow: none;
+    }
+
+  }
+  .logo {
+    color: #0033bb;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: inline-block;
+
+  }
+}
+
+footer {
+  background-color: @footer;
+  border-bottom: 1px solid @lightGray;
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  margin: 20px 0 0;
+  padding: 10px;
+  right: 0;
+  .footer-inner {
+    margin: 10px;
+    max-width: 1200px;
+  }
+}
+
+main {
+  margin-top: 58px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  padding-bottom: 20px;
+}
+
+.gray-background-color {
+  background-color: #f4f4f4;
+}
+

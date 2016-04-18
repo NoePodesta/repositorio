@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <title>Noe Podesta</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Test técnico">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="María Noel Podestá">
+    <link rel="stylesheet" type="text/css" href="../node_modules/chico/dist/ui/chico.css">
+    <link rel="stylesheet" type="text/css" href="../dist/style/style.min.css">
+</head>
+<body>
+<div class="header" role="banner">
+    <div class="header-inner">
+        <div class="logo">
+           Mercado Libre
+        </div>
+        <form id="searchForm" class="nav-search">
+            <input role="search" type="text" title="Buscador">
+            <button type="submit" name="searchBtn" class="ch-btn-small search-btn ch-btn"><i
+                    class=" ch-icon-search"></i></button>
+        </form>
+
+    </div>
+</div>
+<main itemscope itemtype="http://schema.org/Product">
+    <header class="gray-background-color">
+        <h1 itemprop="name">Ipad Mini Apple 16 Gb Wifi Led 7.9</h1>
+    </header>
+    <section class="short-product-detail gray-background-color">
+        <div class="img-container">
+            <img itemprop="image" alt="Ipod Mini Apple 16 Gb Wifi Led 7.9 Image" src="../dist/img/iPad-mini.jpg"/>
+        </div>
+        <div class="info-container">
+            <div class="price ch-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <strong itemprop="priceCurrency">$</strong>
+                <strong itemprop="price">4999<sup>99</sup></strong>
+            </div>
+            <form class="ch-form" action="" method="post">
+                <div class="ch-form-row">
+                    <label for="productQ">Cantidad: </label>
+                    <input id="productQ" type="number" name="productQ" title="Cantidad de unidades del producto"
+                           placeholder="1" min="1" max="99">
+                </div>
+                <div class="ch-form-row"><label for="installments">Cuotas: </label>
+                    <input id="installments" type="number" name="installments" title="Cantidad de cuotas"
+                           placeholder="12">
+                </div>
+                <div class="ch-form-actions">
+                    <button type="submit" title="Comparar Ipad mini Apple 16 GB" class="ch-btn">Comprar</button>
+                    <p>
+                        <small>Mercado Libre no es el vendedor de este producto.</small>
+                    </p>
+                </div>
+            </form>
+
+            <div class="ch-box-lite related-products">
+                <h2 id="carousel">Productos Relacionados</h2>
+                <div class="carousel ch-carousel">
+                    <ul>
+                        <li itemprop="isRelatedTo"><img src="../dist/img/iPad-mini-2.jpg" alt="Productos relacionados"></li>
+                        <li itemprop="isRelatedTo"><img src="../dist/img/iPad-mini-3.jpg" alt="Productos relacionados"></li>
+                        <li itemprop="isRelatedTo"><img src="../dist/img/iPad-mini-4.jpg" alt="Productos relacionados"></li>
+                        <li itemprop="isRelatedTo"><img src="../dist/img/iPad-mini-5.jpg" alt="Productos relacionados"></li>
+                        <li itemprop="isRelatedTo"><img src="../dist/img/iPad-mini-2.jpg" alt="Productos relacionados"></li>
+                        <li itemprop="isRelatedTo"><img src="../dist/img/iPad-mini-3.jpg" alt="Productos relacionados"></li>
+                        <li itemprop="isRelatedTo"><img src="../dist/img/iPad-mini-4.jpg" alt="Productos relacionados"></li>
+                        <li itemprop="isRelatedTo"><img src="../dist/img/iPad-mini-5.jpg" alt="Productos relacionados"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section>
+        <h2 class="ch-hidden">More Information</h2>
+        <ul class="tabs">
+            <li class="tab">
+                <input type="radio" id="moreProductDetail" name="details">
+                <label for="moreProductDetail">Product Description</label>
+                <div class="tab-content">
+                    <p> El nuevo iPad mini 4 pone en tus manos un rendimiento y una potencia sin igual. Es más delgado y
+                        liviano que los anteriores, pero lo suficientemente poderoso para que puedas llevar tus ideas a
+                        otro nivel.</p>
+                    <p>El iPad mini 4 tiene todo lo que te encanta del iPad en un diseño increíblemente delgado y
+                        portátil. Podrás llamar a tus amigos por FaceTime o trabajar, cuando quieras y donde
+                        quieras.</p>
+                    <p>El iPad mini 4 tiene un chip A8 con arquitectura de 64 bits de segunda generación capaz de
+                        manejar hasta las apps más exigentes. Puedes editar un video, mirar fotos o hacer ambas cosas a
+                        la vez, y siempre tendrás una experiencia uniforme y fluida.</p>
+                </div>
+            </li>
+            <li class="tab">
+                <input type="radio" name="details" checked aria-checked="true" id="questions">
+                <label for="questions">Questions</label>
+                <div class="tab-content">
+                    <div class="new-question">
+                        <i class=" ch-icon-comment"></i><input type="text" title="question"
+                                                               placeholder="Escribe tu pregunta">
+                    </div>
+                    <ol class="list-questions">
+                        <li>
+                            <div class="question">
+                                <i class=" ch-icon-comment"></i>Es usado?
+                            </div>
+                            <div class="answer">
+                                <i class=" ch-icon-comments"></i>No, no es usado.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <i class=" ch-icon-comment"></i>Tenes stock? Podría retirarlo hoy?
+                            </div>
+                            <div class="answer">
+                                <i class=" ch-icon-comments"></i>Si, hay stock. Si, podrías retirarlo hoy, estamos hasta
+                                las 19hrs.
+                            </div>
+                        </li>
+                    </ol>
+
+                </div>
+            </li>
+            <li class="clear">
+        </ul>
+    </section>
+</main>
+
+<footer role="contentinfo">
+    <p>María Noel Podestá</p>
+</footer>
+
+<script src="http://static.mlstatic.com/org-img/ch/vendor/jquery/jquery-1.10.2.min.js"></script>
+<script src="http://static.mlstatic.com/org-img/ch/ui/1.0.0/chico.min.js"></script>
+<script src="../dist/js/script.min.js"></script>
+</body>
+</html>

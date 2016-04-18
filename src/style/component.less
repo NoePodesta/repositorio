@@ -1,0 +1,42 @@
+@import "_variables.less";
+
+.tabs{
+  margin: 20px;
+  position: relative;
+  min-height: 300px;
+  .tab {
+    float: left;
+    label {
+      background-color: #f4f4f4;
+      cursor: pointer;
+      display: inline;
+      border: 1px solid @lightGray;
+      border-radius: 10px 10px 0 0;
+      padding: 10px;
+      margin-right: 2px;
+
+    }
+    input[type="radio"] {
+      display: none;
+      &:checked ~ label ~.tab-content{
+        opacity: 1;
+        display: block;
+        transition: all ease-out 0.2s 0.1s;
+      }
+      &:checked ~ label {
+        background-color: white;
+      }
+    }
+
+    .tab-content {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      border: 1px solid @lightGray;
+      margin-top: 7px;
+      opacity: 0;
+      padding: 15px 8px;
+      text-align: left;
+    }
+  }
+}
